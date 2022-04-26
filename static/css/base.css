@@ -37,9 +37,14 @@ h2, h3, h4 {
 }
 
 .classes-button {
-    background: black;
+    background: #343a40;
     color: white;
     min-width: 260px;
+    outline: 2px solid #FF6F61;
+}
+
+.logged-in {
+    color: #FF6F61;
 }
 
 .btn-black {
@@ -64,6 +69,24 @@ h2, h3, h4 {
 .border-black {
     border: 1px solid black !important;
 }
+
+.bottom-homepage-container {
+    background-color: #FF6F61;
+    outline: 20px solid #343a40;
+}
+
+/*  
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.homepage-graphic {
+    background-image: url('/media/wave-haikei_2.svg');
+} */
 
 /* -------------------------------- Media Queries */
 
