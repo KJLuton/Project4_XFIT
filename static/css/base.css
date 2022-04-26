@@ -30,6 +30,7 @@ h2, h3, h4 {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
+    color: #fff;
 }
 
 .main-logo-link {
@@ -73,6 +74,26 @@ h2, h3, h4 {
 .bottom-homepage-container {
     background-color: #FF6F61;
     outline: 20px solid #343a40;
+    height: 40%;
+}
+
+hr {
+    margin-top: 0rem;
+    margin-bottom: 0.25rem;
+    border: 0;
+    border-top: 0px solid rgba(0,0,0,.1);
+}
+
+.main-menu {
+    font-size: 12px;
+}
+
+.memberships {
+    background-color: #FF6F61;
+}
+
+a:hover {
+    color: #FF6F61;
 }
 
 /*  
