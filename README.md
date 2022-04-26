@@ -153,6 +153,8 @@ _______
 * Tested the site was linked to django by typing "python3 manage.py runserver" into the terminal once the initial django installation had been made. The django confirmation screen confirmed the installation had work and the site was connected. 
 * Tested the initial allauth account set up by setting the LOGIN_REDIRECT_URL to '/sucess'. Even though the final url path hadn't been set up, the error message was for the url, '/success', which confirms that the authentication is working properly. 
 
+* compressed images using tinypng.com to ensure images dont take up to much space and slow the site down. tinypng keeps the image quality qhilst reducing te size. 
+
 
 * The website testing was a continouse process throughout the project build. I continously tested the functions and pages before every commit to ensure they were working properly. 
 
