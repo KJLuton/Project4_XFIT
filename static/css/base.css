@@ -89,7 +89,7 @@ dl, ol, ul {
 .bottom-homepage-container {
     background-color: #FF6F61;
     outline: 20px solid #343a40;
-    height: 40%;
+    height: 30%;
 }
 
 hr {
@@ -104,14 +104,14 @@ hr {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: -10;
-    width: 900px;
-    height: 502px;
+    width: 100%;
+    height: 300px;
     background: rgba(0,0,0,0.6);
-    transform: skew(-2030deg);
-    right: 300px;
+    transform: skew(143deg);
+    right: 50%;
 }
 
 /*  
