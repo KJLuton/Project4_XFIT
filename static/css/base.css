@@ -93,7 +93,7 @@ dl, ol, ul {
     background-color: #343a40;
     color: #FF6F61;
     outline: 2px solid #FF6F61;
-    height: 20%;
+    height: 40%;
 }
 
 hr {
@@ -176,9 +176,9 @@ hr {
   .btn-envelop a{color: #D6403A;font-size: 15px; padding: 9px 12px;}
   .standard_header .standard_social_links {margin-left: 1rem;}
   
-    /*
+    /* 
     =========================================================================================
-                                      footer
+    footer - https://ordinarycoders.com/blog/article/bootstrap-footers - 
     =========================================================================================
     */
     
@@ -271,7 +271,6 @@ hr {
   }
   
   .info a {
-  
       color: #b3b3b3;
       font-size: 14px;
       line-height: 30px;
