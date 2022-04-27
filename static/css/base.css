@@ -96,6 +96,11 @@ a:hover {
     color: #FF6F61;
 }
 
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
 /*  
 .spacer {
     aspect-ratio: 960/300;
