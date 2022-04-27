@@ -18,6 +18,21 @@ h2, h3, h4 {
     font-family: 'Orbitron', sans-serif;
 }
 
+/* nav bar */
+
+.memberships {
+    background-color: #FF6F61;
+}
+
+a:hover {
+    color: #FF6F61;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -88,17 +103,15 @@ hr {
     font-size: 12px;
 }
 
-.memberships {
-    background-color: #FF6F61;
-}
-
-a:hover {
-    color: #FF6F61;
-}
-
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 0rem;
+.overlay {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    width: 900px;
+    height: 502px;
+    background: rgba(0,0,0,0.6);
+    transform: skew(-2030deg);
+    right: 300px;
 }
 
 /*  
