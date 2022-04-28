@@ -34,7 +34,7 @@
          "description":"Look awesome in your workouts with this breathable XFIT top.",
          "price":24.99,
          "category":2,
-         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image_url":"",
          "image":"./media/product_placeholder.png"
       }
    },
@@ -47,7 +47,7 @@
          "description":"Look awesome in your workouts with this breathable XFIT top.",
          "price":24.99,
          "category":2,
-         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image_url":"",
          "image":"./media/product_placeholder.png"
       }
    },
@@ -60,7 +60,7 @@
          "description":"Lift more.",
          "price":12.99,
          "category":3,
-         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image_url":"",
          "image":"./media/product_placeholder.png"
       }
    },
@@ -73,7 +73,7 @@
          "description":"10 week membership.",
          "price":24.99,
          "category":5,
-         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image_url":"",
          "image":"./media/product_placeholder.png"
       }
    }

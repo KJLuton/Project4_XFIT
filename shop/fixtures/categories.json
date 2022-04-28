@@ -4,7 +4,7 @@
         "model": "shop.category",
         "fields": {
             "name": "tshirts_hoodies",
-            "friendly_name": "Tshirts &amp; Hoodies"
+            "friendly_name": "Tshirts & Hoodies"
         }
     },
     {
@@ -12,7 +12,7 @@
         "model": "shop.category",
         "fields": {
             "name": "shorts_leggings",
-            "friendly_name": "Shorts &amp; Leggings"
+            "friendly_name": "Shorts & Leggings"
         }
     },
     {
