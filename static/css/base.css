@@ -37,6 +37,12 @@ dl, ol, ul {
     margin-bottom: 0rem;
 }
 
+/* header  */
+
+.header-container {
+    padding-top: 164px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -49,10 +55,6 @@ dl, ol, ul {
 .logo-font {
     text-transform: uppercase;
     font-family: 'Orbitron', sans-serif;
-}
-
-.main-logo-link {
-    width: fit-content;
 }
 
 .classes-button {
@@ -166,26 +168,9 @@ Media Queries
   }
 }
 
-/* fixed top navbar only on medium and up 
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-*/
-
-@media (min-width: 1000px) {
+@media (min-width: 922px){
     .header-container {
         padding-top: 164px;
-    }
-}
-
-@media (min-width: 375px) {
-    .header-container {
-        padding-top: 100px;
     }
 }
 
