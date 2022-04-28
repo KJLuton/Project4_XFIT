@@ -107,7 +107,7 @@ hr {
     font-size: 12px;
 }
 
-.overlay {
+.homepage-overlay {
     position: fixed;
     top: 0;
     z-index: -10;
@@ -116,6 +116,17 @@ hr {
     background: rgba(0,0,0,0.6);
     transform: skew(143deg);
     right: 50%;
+}
+
+/* shop page */
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: blue;
 }
 
 /*  
