@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "shop.category",
+        "fields": {
+            "name": "tshirts_hoodies",
+            "friendly_name": "Tshirts &amp; Hoodies"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "shop.category",
+        "fields": {
+            "name": "shorts_leggings",
+            "friendly_name": "Shorts &amp; Leggings"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "shop.category",
+        "fields": {
+            "name": "xfit_essentials",
+            "friendly_name": "XFIT Essentials"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "shop.category",
+        "fields": {
+            "name": "sale",
+            "friendly_name": "Sale"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "shop.category",
+        "fields": {
+            "name": "membership",
+            "friendly_name": "Membership"
+        }
+    }
+]

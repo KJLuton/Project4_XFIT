@@ -1,0 +1,81 @@
+[
+   {
+      "pk":1,
+      "model":"shop.product",
+      "fields":{
+         "sku":"XFI/UK-001",
+         "name":"XFIT Tank Top",
+         "description":"Look awesome in your workouts with this breathable XFIT top.",
+         "price":19.99,
+         "category":1,
+         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image":"./media/product_placeholder.png"
+      }
+   },
+   {
+      "pk":2,
+      "model":"shop.product",
+      "fields":{
+         "sku":"XFI/UK-002",
+         "name":"XFIT Tshirt",
+         "description":"Look awesome in your workouts with this breathable XFIT top.",
+         "price":24.99,
+         "category":1,
+         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image":"./media/product_placeholder.png"
+      }
+   },
+   {
+      "pk":3,
+      "model":"shop.product",
+      "fields":{
+         "sku":"XFI/UK-003",
+         "name":"XFIT Shorts",
+         "description":"Look awesome in your workouts with this breathable XFIT top.",
+         "price":24.99,
+         "category":2,
+         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image":"./media/product_placeholder.png"
+      }
+   },
+   {
+      "pk":4,
+      "model":"shop.product",
+      "fields":{
+         "sku":"XFI/UK-004",
+         "name":"XFIT Leggings",
+         "description":"Look awesome in your workouts with this breathable XFIT top.",
+         "price":24.99,
+         "category":2,
+         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image":"./media/product_placeholder.png"
+      }
+   },
+   {
+      "pk":5,
+      "model":"shop.product",
+      "fields":{
+         "sku":"XFI/UK-005",
+         "name":"Wrist Straps",
+         "description":"Lift more.",
+         "price":12.99,
+         "category":3,
+         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image":"./media/product_placeholder.png"
+      }
+   },
+   {
+      "pk":6,
+      "model":"shop.product",
+      "fields":{
+         "sku":"XFI/UK-006",
+         "name":"Membership",
+         "description":"10 week membership.",
+         "price":24.99,
+         "category":5,
+         "image_url":"./workspace/Project4_XFIT/media/product_placeholder.png",
+         "image":"./media/product_placeholder.png"
+      }
+   }
+
+]
