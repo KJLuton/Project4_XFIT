@@ -43,6 +43,12 @@ dl, ol, ul {
     padding-top: 164px;
 }
 
+.message-container {
+    background-color: #1c9deb;
+    height: 40px;
+    width: 100%;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
