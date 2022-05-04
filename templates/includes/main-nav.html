@@ -16,10 +16,10 @@
                 Merchandise
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="merchandise-link">
-                <a href="" class="dropdown-item">Tshirts & Hoodies</a>
-                <a href="" class="dropdown-item">Shorts</a>
-                <a href="" class="dropdown-item">XFIT Essentials</a>
-                <a href="{% url 'shop' %}" class="dropdown-item">All Merchandise</a>
+                <a href="{% url 'shop' %}?category=tshirts_hoodies" class="dropdown-item">Tshirts & Hoodies</a>
+                <a href="{% url 'shop' %}?category=shorts_leggings" class="dropdown-item">Shorts</a>
+                <a href="{% url 'shop' %}?category=xfit_essentials" class="dropdown-item">XFIT Essentials</a>
+                <a href="{% url 'shop' %}?category=xfit_essentials,shorts_leggings,tshirts_hoodies" class="dropdown-item">All Merchandise</a>
             </div>
         </li>
 
