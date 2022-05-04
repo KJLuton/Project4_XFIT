@@ -87,6 +87,10 @@ dl, ol, ul {
     color: #fff !important;
 }
 
+.text-dark {
+    color: #333 !important;
+}
+
 .row-top {
     padding-top: 10em;
 }
@@ -142,6 +146,18 @@ dl, ol, ul {
     padding-bottom: 40px;
 }
 
+
+/* product detail page  */
+
+.product-detail {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
 /*  
 .spacer {
     aspect-ratio: 960/300;
@@ -155,24 +171,7 @@ dl, ol, ul {
     background-image: url('/media/wave-haikei_2.svg');
 } */
 
-/*
-=========================================================================================
-Media Queries
-=========================================================================================
-*/
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-@media (min-width: 922px){
-    .header-container {
-        padding-top: 164px;
-    }
-}
 
 /*
 =========================================================================================
@@ -433,6 +432,32 @@ footer li {
     list-style: none;
 }
 
+
+/*
+=========================================================================================
+Media Queries
+=========================================================================================
+*/
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile - boutique_ado_v1 project media query */ 
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+/* footer  */
 @media(max-width:768px) {
     .footer-wrap h3 {
         margin-top: 27px;

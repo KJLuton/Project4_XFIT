@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="page-overlay"></div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="logo-font text-dark">Welcome to the XFIT shop</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <form method="GET" action="">
+                    <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search the shop">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="/media/product_placeholder.png" alt="{{ product.name }}">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-dark product-detail">
+            <h3>{{ product.name }}</h3>
+            <h5>£{{ product.price }}</h5>
+            <p>{{ product.description }}</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
