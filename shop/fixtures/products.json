@@ -43,7 +43,7 @@
       "model":"shop.product",
       "fields":{
          "sku":"XFI/UK-004",
-         "name":"XFIT Leggings",
+         "name":"XFIT Leggings (Men)",
          "description":"Look awesome in your workouts with this breathable XFIT top.",
          "price":24.99,
          "category":2,

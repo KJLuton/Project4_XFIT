@@ -6,14 +6,38 @@
 <div class="page-overlay"></div>
     <div class="container header-container">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Welcome to the XFIT shop</h2>
+            <div class="col text-center my-3">
+                <h2 class="logo-font text-dark">Welcome to the XFIT shop</h2>
+                {% for c in current_categories %}
+                    <a class="category-button" href="{% url 'shop' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge badge-black text-dark rounded-0 border border-dark text-decoration-none">{{ c.friendly_name }}</span>
+                    </a>
+                {% endfor %}
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <p class="text-muted mt-3 small">
+                    {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span class="small"><a href="{% url 'shop' %}">View all products</a> | </span>
+                    {% endif %}
+                    {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                </p>
+                    <div class="sort-select-wrapper w-100">
+                        <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            </div>
+            <div class="col-12 col-lg-4 py-1 py-lg-0 search-bar">
                 {% include 'includes/search.html' %}
             </div>
         </div>
@@ -45,6 +69,14 @@
                                 <div class="row">
                                     <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                    {% if product.category %}
+                                        <p class="small mt-1 mb-0">
+                                            <a class="text-muted"
+                                                href="{% url 'shop' %}?category={{ product.category.name }}">
+                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                            </a>
+                                        </p>
+                                    {% endif %}
                                     </div>
                                 </div>
                             </div>

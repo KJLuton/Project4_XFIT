@@ -49,6 +49,7 @@ dl, ol, ul {
     width: 100%;
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -137,7 +138,11 @@ dl, ol, ul {
     right: 50%;
 }
 
-/* shop page */
+/*
+=========================================================================================
+Shop Page
+=========================================================================================
+*/
 
 .page-overlay {
     position: fixed;
@@ -152,8 +157,21 @@ dl, ol, ul {
     padding-bottom: 40px;
 }
 
+a.category-button > span.badge:hover {
+    background:#343a40 !important;
+    color: #FF6F61 !important;
+}
 
-/* product detail page  */
+.search-bar {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*
+=========================================================================================
+Product Detail Page
+=========================================================================================
+*/
 
 .product-detail {
     display: flex;
