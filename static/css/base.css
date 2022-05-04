@@ -182,6 +182,10 @@ Product Detail Page
     padding: 30px;
 }
 
+.checkout-actions {
+    display: flex;
+}
+
 /*  
 .spacer {
     aspect-ratio: 960/300;

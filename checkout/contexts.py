@@ -7,13 +7,10 @@ def checkout_contents(request):
     total = 0
     product_count = 0
 
-    grand_total = total
-
     context = {
-        'checkout_items': checkout_items
-        'total': total
-        'product_count': product_count
-        'grand_total': grand_total
+        'checkout_items': checkout_items,
+        'total': total,
+        'product_count': product_count,
     }
 
     return context

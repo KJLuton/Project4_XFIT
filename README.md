@@ -93,6 +93,8 @@ _______
 
 ## Existing Features
 
+csrf_token - security 
+
 ### Page 
 
 ![page mock up](image.url)
@@ -101,6 +103,9 @@ _______
 
 
 ## Future implementations
+
+- Add sales category
+- Add links to images 
 
 
 [Back to table of contents](#table-of-contents)
