@@ -1,14 +1,15 @@
 from decimal import Decimal
 from django.conf import settings
 
-def checkout_contents(request):
 
-    checkout_items = []
+def bag_contents(request):
+
+    bag_items = []
     total = 0
     product_count = 0
 
     context = {
-        'checkout_items': checkout_items,
+        'bag_items': bag_items,
         'total': total,
         'product_count': product_count,
     }
