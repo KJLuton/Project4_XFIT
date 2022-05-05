@@ -160,6 +160,10 @@ _______
 
 * compressed images using tinypng.com to ensure images dont take up to much space and slow the site down. tinypng keeps the image quality qhilst reducing te size. 
 
+* Started with 'checkout' teminology for the 'bag' app. Updated it to bag so a checkout could be created and not confused. 
+* Used print statements to confirm bag contents were being added and it was set up correctly ahead of rendering the items into the shopping bag template. 
+
+
 
 * The website testing was a continouse process throughout the project build. I continously tested the functions and pages before every commit to ensure they were working properly. 
 
