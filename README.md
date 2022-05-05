@@ -183,6 +183,8 @@ _______
 
 ### Issues Found During Site Development
 
+{% load bag_tools %} wouldn't work. Read django documentation https://docs.djangoproject.com/en/4.0/howto/custom-template-tags/ but everything was set up correctly. Restarted the server and it worked. 
+
 
 [Back to table of contents](#table-of-contents)
 _______
