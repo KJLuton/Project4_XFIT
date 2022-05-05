@@ -42,6 +42,7 @@
                                 </td>
                                 <td class="p-3">
                                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                    <p class="my-0">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                 </td>
                                 <td class="p-3">
                                     <p class="my-0">{{ item.product.price }}</p>
