@@ -159,6 +159,14 @@ Shop Page
     background: #ebebeb;
 }
 
+.delivery-banner {
+    padding-top: 15px;
+}
+
+.delivery-cta {
+    color: #FF6F61 !important;
+}
+
 .product-container {
     padding-bottom: 40px;
 }
