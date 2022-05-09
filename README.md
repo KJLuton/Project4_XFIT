@@ -150,6 +150,7 @@ _______
 * #### [Django]()    
 * #### [Javascript]()   
 
+
 [Back to table of contents](#table-of-contents)
 _______
 
@@ -240,6 +241,10 @@ To write the code I used tutorials from the Code Institute lessons (Backend Deve
 
 Base.html boiler template - bootstrap (https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
 Homepage overlay : (https://codepen.io/zemchuks/pen/VwZjywr?html-preprocessor=pug)
+
+
+https://stripe.com/docs/payments/accept-a-payment?platform=web&ui=elements#set-up-stripe
+
 
 # Acknowledgements
 
