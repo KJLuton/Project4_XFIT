@@ -77,7 +77,8 @@ dl, ol, ul {
     outline: 2px solid #FF6F61;
 }
 
-.logged-in {
+.logged-in, 
+.bag-active {
     color: #FF6F61;
 }
 
