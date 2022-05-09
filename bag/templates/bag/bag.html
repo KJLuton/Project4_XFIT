@@ -87,7 +87,7 @@
                         {% endfor %}
                     </table>
                 </div>
-                <div>
+                <div class="bag-summary">
                 <table>
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
@@ -109,7 +109,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <a href="" class="btn btn-black btn-lg">
+                                <a href="{% url 'checkout' %}" class="btn btn-black btn-lg">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fas fa-lock"></i>

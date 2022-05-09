@@ -109,13 +109,6 @@ dl, ol, ul {
     padding-top: 10em;
 }
 
-.bottom-homepage-container {
-    background-color: #343a40;
-    color: #FF6F61;
-    outline: 2px solid #FF6F61;
-    height: 40%;
-}
-
 .hr-homepage {
     margin-top: 0rem;
     margin-bottom: 0.25rem;
@@ -199,6 +192,11 @@ Product Detail Page
 
 .bag-actions {
     display: flex;
+}
+
+.bag-summary {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*  
