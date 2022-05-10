@@ -170,6 +170,23 @@ _______
 
 ### Functionality Testing
 
+https://dashboard.stripe.com/test/payments 
+Check the events to see if the payment intent was created and processed successfully. 
+
+<strong><u>Stripe payment testing</u></strong> <br>
+<strong>Method:</strong> Credit card <br>
+<strong>Scenario 1:</strong> The card payment succeeds and doesn’t require authentication.<br>
+<strong>Testing:</strong> Fill in the credit card form using the credit card number 4242 4242 4242 4242 with any expiry, CVC, and postal code.<br>
+<br>
+<strong>Method:</strong> Credit card <br>
+<strong>Scenario 2:</strong> The card payment requires authentication.<br>
+<strong>Testing:</strong> Fill in the credit card form using the credit card number 4000 0025 0000 3155 with any expiry, CVC, and postal code.<br>
+<br>
+<strong>Method:</strong> Credit card<br>
+<strong>Scenario 3:</strong> The card is declined with a decline code such as insufficient_funds.<br>
+<strong>Testing:</strong> Fill in the credit card form using the credit card number 4000 0000 0000 9995 with any expiry, CVC, and postal code.<br>
+
+<hr>
 
 ### User Stories Testing
 
