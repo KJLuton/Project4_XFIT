@@ -95,6 +95,11 @@ _______
 
 csrf_token - security 
 
+## Apps
+
+Profiles 
+The profiles app will serve two purposes. First to provide a user with a place to save default delivery information. And second to provide them with a record of their order history.
+
 ### Page 
 
 ![page mock up](image.url)
