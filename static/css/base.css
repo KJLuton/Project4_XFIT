@@ -1,3 +1,10 @@
+/*
+=========================================================================================
+Body, fonts
+=========================================================================================
+*/
+
+
 html {
     height: 100%;
 }
@@ -22,20 +29,21 @@ h5 {
     font-size: 20px;
 }
 
-.btt-link,
-.update-link,
-.remove-link {
-    cursor: pointer;
-}
-
-/* nav bar */
-
-.memberships {
-    background-color: #FF6F61;
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 a:hover {
     color: #FF6F61;
+    text-decoration: underline;
+}
+
+.btt-link,
+.update-link,
+.remove-link {
+    cursor: pointer;
 }
 
 dl, ol, ul {
@@ -43,7 +51,21 @@ dl, ol, ul {
     margin-bottom: 0rem;
 }
 
-/* header  */
+/*
+=========================================================================================
+Nav Bar
+=========================================================================================
+*/
+
+.memberships {
+    background-color: #FF6F61;
+}
+
+/*
+=========================================================================================
+Header
+=========================================================================================
+*/
 
 .header-container {
     padding-top: 164px;
@@ -56,7 +78,13 @@ dl, ol, ul {
 }
 
 
-/* from Bulma */
+/*
+=========================================================================================
+from Bulma
+=========================================================================================
+*/
+
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -140,7 +168,7 @@ dl, ol, ul {
 
 /*
 =========================================================================================
-Shop Page
+Pages
 =========================================================================================
 */
 
@@ -153,27 +181,6 @@ Shop Page
     background: #ebebeb;
 }
 
-.delivery-banner {
-    padding-top: 15px;
-}
-
-.delivery-cta {
-    color: #FF6F61 !important;
-}
-
-.product-container {
-    padding-bottom: 40px;
-}
-
-a.category-button > span.badge:hover {
-    background:#343a40 !important;
-    color: #FF6F61 !important;
-}
-
-.search-bar {
-    display: flex;
-    align-items: flex-end;
-}
 
 /*
 =========================================================================================
@@ -198,20 +205,6 @@ Product Detail Page
     display: flex;
     justify-content: flex-end;
 }
-
-/*  
-.spacer {
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.homepage-graphic {
-    background-image: url('/media/wave-haikei_2.svg');
-} */
-
 
 
 /*
@@ -471,6 +464,66 @@ ul {
 
 footer li {
     list-style: none;
+}
+
+
+/*
+=========================================================================================
+Allauth form formatting - Boutique Ado project 
+https://github.com/Code-Institute-Solutions/boutique_ado_v1/blob/149abda4318106704ac8d3118b8e5a63ef070619/static/css/base.css
+=========================================================================================
+*/
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #0080ff;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
 }
 
 
