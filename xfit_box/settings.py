@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-@!x$%x#o%0f6v)lpcu1pbbx+&2_-al_%b1sxykvk2x2=46--k@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['xfit-crossfit-ms4.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -118,12 +118,17 @@ WSGI_APPLICATION = 'xfit_box.wsgi.application'
 
 # Database
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation

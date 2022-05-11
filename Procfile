@@ -1,0 +1,1 @@
+web: gunicorn xfit_box.wsgi:application
