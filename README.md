@@ -91,6 +91,12 @@ The fonts are installed from [Google Fonts](https://fonts.google.com/):
 _______
 # Features and functions
 
+General user: 
+
+Super User: 
+* Add product 
+* Edit Product 
+
 ## Existing Features
 
 csrf_token - security 
