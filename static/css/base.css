@@ -208,9 +208,15 @@ Product Detail Page
 
 /*
 =========================================================================================
-Boostrap Toasts 
+ Toasts 
 =========================================================================================
 */
+
+.delivery-cta-toast {
+    background-color: #FF6F61 !important;
+}
+
+/* Boostrap Toasts  */
 
 .message-container {
     position: fixed;
@@ -257,7 +263,7 @@ Boostrap Toasts
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: #FF6F61 !important;
 }
 
 .arrow-info {
