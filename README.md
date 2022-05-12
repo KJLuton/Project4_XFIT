@@ -117,6 +117,7 @@ The profiles app will serve two purposes. First to provide a user with a place t
 
 - Add sales category
 - Add links to images 
+- Add confirmation when deleting products 
 
 
 [Back to table of contents](#table-of-contents)

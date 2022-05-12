@@ -3,7 +3,7 @@
 
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profiles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shop.css' %}">
 {% endblock %}
 
 
@@ -86,6 +86,12 @@
                                                 <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                             </a>
                                         </p>
+                                    {% endif %}
+                                    {% if request.user.is_superuser %}
+                                        <small class="ml-3">
+                                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        </small>
                                     {% endif %}
                                     </div>
                                 </div>
