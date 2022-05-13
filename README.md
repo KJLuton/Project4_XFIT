@@ -242,6 +242,12 @@ _______
 
 ## Media
 
+Shirt - https://www.pngbyte.com/en/freepng-zqozx/download
+Tank - https://www.redbubble.com/i/tank-top/t-shirt-mockup-free-by-davids350/96256725.B4HC7?country_code=GB&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5jnGy3kF5IuoTTfu5_1ikoMZ9_dUrLW7RiJTe3sAxfCDhFVh5xlxfQaAmkgEALw_wcB&gclsrc=aw.ds 
+Weight belt - https://www.gymreapers.com/products/gymreapers-7mm-leather-weightlifting-belt
+Hoody - https://www.pngfind.com/pngs/b/351-3518660_blank-hoodie-png.png 
+Shorts - https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/0/2/02-09-2021_JD_DM4400-010_m1_1.jpg
+Leggings - https://i5.walmartimages.com/asr/a83c3c4b-95de-49f3-b588-dbfeffd9dedd_1.c67be96c5fe1eaf4a03f720e1c052f3c.jpeg 
 
 #### Images: 
 
