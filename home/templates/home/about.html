@@ -15,20 +15,18 @@
 <div class="page-overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col offset-3">
-            <h2>Contact Us</h2>
+        <div class="col">
+            <h2>About Us</h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 offset-3">
-            <form method="POST">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <div class="form-actions">
-                    <button type="submit">Send</button>
-                </div>
-            </form>
+        <div class="col-12 col-lg-6">
+        <p>We are awesome. 
+            Why we started:
+            Location is: 
+        </p>
         </div>
+        <div class="col-12 col-lg-6"></div>
     </div>
 </div>
 

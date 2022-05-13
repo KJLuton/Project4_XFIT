@@ -239,6 +239,7 @@ _______
 
 ## Content
 
+Policy generator - https://app.freeprivacypolicy.com/
 
 ## Media
 
