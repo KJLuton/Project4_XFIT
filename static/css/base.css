@@ -76,6 +76,17 @@ Header
     width: 100%
 }
 
+/*
+=========================================================================================
+Page container
+=========================================================================================
+*/
+
+.page-container {
+    position: relative;
+    min-height: 70vh;
+}
+
 
 /*
 =========================================================================================
@@ -355,9 +366,16 @@ Social Icons - Footer
   
 /* 
 =========================================================================================
-Footer section - https://ordinarycoders.com/blog/article/bootstrap-footers - 
+Footer section 
 =========================================================================================
 */
+
+footer {
+    background: #333;
+    position: absolute;
+}
+
+/* below code from: https://ordinarycoders.com/blog/article/bootstrap-footers -  */
     
 .footer-wrap {
     padding-top: 43px;
@@ -481,10 +499,6 @@ footer .first_class {
 footer .first_class p,
 footer .first_class h3 {
     margin: 0 0;
-}
-
-footer {
-    background: #333;
 }
 
 footer .newsletter input[type="text"] {
