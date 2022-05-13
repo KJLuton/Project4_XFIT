@@ -225,6 +225,9 @@ python3 manage.py showmigrations
 
 
 
+heroku login -i
+log in with your heroku credentials
+
 
 
 git push (to push everything to GitHub)
