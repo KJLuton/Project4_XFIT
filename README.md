@@ -177,6 +177,8 @@ _______
 * Used print statements to confirm bag contents were being added and it was set up correctly ahead of rendering the items into the shopping bag template. 
 
 
+SUPER USER: 
+Username: u38805
 
 * The website testing was a continouse process throughout the project build. I continously tested the functions and pages before every commit to ensure they were working properly. 
 
