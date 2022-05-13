@@ -220,6 +220,15 @@ Check the events to see if the payment intent was created and processed successf
 _______
 # Deployment
 
+Migrations 
+python3 manage.py showmigrations
+
+
+
+
+
+git push (to push everything to GitHub)
+git push heroku main (to push everything to Heroku)
 
 [Back to table of contents](#table-of-contents)
 _______
