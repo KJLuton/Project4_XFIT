@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 
 def index(request):
     """ A view to return the index page """
@@ -25,3 +23,9 @@ def membership(request):
     """ A view to return the memberships page """
 
     return render(request, 'home/membership.html')
+
+
+def classes(request):
+    """ A view to return the classes page """
+
+    return render(request, 'home/classes.html')

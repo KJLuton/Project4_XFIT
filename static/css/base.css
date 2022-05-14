@@ -194,6 +194,29 @@ Pages
 
 /*
 =========================================================================================
+Classes Page
+=========================================================================================
+*/
+
+.workout-of-day {
+    background-color: grey;
+}
+
+.weight-class {
+    background-color: #FF6F61;
+}
+
+.female-only {
+    background-color: aquamarine;
+}
+
+.kids-hour {
+    background-color: rgb(129, 127, 255);
+}
+
+
+/*
+=========================================================================================
 Product Detail Page
 =========================================================================================
 */
@@ -375,6 +398,15 @@ footer {
     position: absolute;
 }
 
+.bottom-container {
+    width: 100%
+}
+
+footer .lower-menu {
+    padding-top: 25px;
+    border-top: 1px solid #ff6f61;
+}
+
 /* below code from: https://ordinarycoders.com/blog/article/bootstrap-footers -  */
     
 .footer-wrap {
@@ -416,8 +448,6 @@ footer {
 
 
 .footer-links li:before {
-    content: "\f105";
-    font-family: 'FontAwesome';
     padding-right: 10px;
     color: #ccc;
 }
@@ -430,50 +460,8 @@ footer {
 }
 
 .footer-category li:before {
-    content: "\f105";
-    font-family: 'FontAwesome';
     padding-right: 10px;
     color: #b3b3b3;
-}
-
-.address {
-
-    color: #b3b3b3;
-    font-size: 14px;
-    position: relative;
-    padding-left: 30px;
-    line-height: 30px;
-}
-
-.address:before {
-    content: "\f277";
-    font-family: 'FontAwesome';
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.info a {
-
-    color: #b3b3b3;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: normal;
-}
-
-.fa-phone:before {
-    content: "\f095";
-}
-
-.info a {
-    color: #b3b3b3;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: normal;
-}
-
-.fa-fax:before {
-    content: "\f1ac";
 }
 
 .copyright {
@@ -486,54 +474,9 @@ footer {
     background: #222;
 }
 
-footer .second_class {
+footer .footer-menu {
     border-bottom: 1px solid #444;
     padding-bottom: 25px;
-}
-
-footer .first_class {
-    padding-bottom: 21px;
-    border-bottom: 1px solid #444;
-}
-
-footer .first_class p,
-footer .first_class h3 {
-    margin: 0 0;
-}
-
-footer .newsletter input[type="text"] {
-    width: 100%;
-    background: #fff;
-    color: #333;
-    border: 1px solid #222;
-    padding: 14px 20px;
-    border-radius: 50px;
-    margin-top: 12px;
-}
-
-.newsletter .newsletter_submit_btn {
-    background: #fff;
-    position: absolute;
-    right: 30px;
-    border: 0;
-    top: 26px;
-    font-size: 17px;
-    color: #333;
-}
-
-footer .second_class_bdr {
-    padding-top: 25px;
-    border-top: 1px solid #222;
-}
-
-footer .btn-facebook a {
-    padding: 6px 14px !important;
-}
-
-footer .btn-envelop a {
-    color: #D6403A;
-    font-size: 15px;
-    padding: 12px 12px;
 }
 
 footer .round-btn a {
