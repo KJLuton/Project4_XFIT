@@ -19,3 +19,9 @@ def privacypolicy(request):
     """ A view to return the terms and conditions page """
 
     return render(request, 'home/privacypolicy.html')
+
+
+def membership(request):
+    """ A view to return the memberships page """
+
+    return render(request, 'home/membership.html')
