@@ -11,7 +11,7 @@
                 <h2 class="logo-font text-dark">Memberships</h2>
                 <div class="delivery-banner row text-center">
                     <div class="col">
-                        <h5 class="delivery-cta my-1">Workout your workout schedule to suit you</h5>                
+                        <h5 class="delivery-cta my-1">To suit your style</h5>                
                     </div>            
                 </div>
             </div>
@@ -25,29 +25,29 @@
         <div class="col">
             <div class="card-deck mb-3 text-center">
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Monthly</h4>
+                    <div class="membership-card-header">
+                        <h4 class="my-0 font-weight-normal">Month Pass</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">£60 <small class="text-muted">/ mo</small></h1>
+                        <h1 class="card-title pricing-card-title">£60</h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>4 classes a week</li>
+                            <li>Pay as you go</li>
                         </ul>
-                        <a href="{% url 'checkout' %}?membership=monthly"><button type="button"
-                                class="btn btn-lg btn-block btn-outline-primary">Get started</button></a>
+                        <a href="{% url 'shop' %}?category=membership" type="button"
+                                class="btn btn-lg btn-block membership-btn-outline">Buy Now</a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 font-weight-normal">Monthly</h4>
+                    <div class="membership-card-header">
+                        <h4 class="my-0 font-weight-normal">Year Pass</h4>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title pricing-card-title">£100 <small class="text-muted">/ mo</small></h1>
+                        <h1 class="card-title pricing-card-title">£520</h1>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>6 classes a week</li>
+                            <li>Save £200 across the year</li>
                         </ul>
-                        <a href="{% url 'checkout' %}?membership=yearly"><button type="button"
-                                class="btn btn-lg btn-block btn-primary">Get started</button></a>
+                        <a href="{% url 'shop' %}?category=membership" type="button"
+                            class="btn btn-lg btn-block membership-btn-outline">Buy Now</a>
                     </div>
                 </div>
             </div>

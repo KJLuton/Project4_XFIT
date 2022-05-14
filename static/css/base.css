@@ -214,6 +214,23 @@ Classes Page
     background-color: rgb(129, 127, 255);
 }
 
+/*
+=========================================================================================
+Membership Page
+=========================================================================================
+*/
+
+.membership-btn-outline {
+    color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+.membership-card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #ff6f61;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
 
 /*
 =========================================================================================

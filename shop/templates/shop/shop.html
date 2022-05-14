@@ -29,7 +29,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <p class="text-muted mt-3 small">
                     {% if search_term or current_categories or current_sorting != 'None_None' %}
-                        <span class="small"><a href="{% url 'shop' %}">View all products</a> | </span>
+                        <span class="small"><a href="{% url 'shop' %}?category=xfit_essentials,shorts_leggings,tshirts_hoodies">View all products</a> | </span>
                     {% endif %}
                     {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                 </p>
