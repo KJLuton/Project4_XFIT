@@ -216,6 +216,22 @@ Check the events to see if the payment intent was created and processed successf
 
 * #### W3C Markup Validation Service - Confirmed results 
 
+Homepage - Pass
+Membership Page - Pass
+Classes Page - Pass
+Shop Page - Pass
+Contact Us Page - Pass
+Profile Page - Pass
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    
+
+
 
 * #### W3C CSS Validation Service
 
