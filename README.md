@@ -11,7 +11,7 @@ The GitHub repository containing the source code and assets is available here: [
 Disclaimer: This website has been built for entertainment and education purposes. It does not represent an actual company. The website is responsive for multiple screen types.
 
 
-## [View live website on Heroku App](link)
+## [View live website on Heroku App](https://xfit-crossfit-ms4.herokuapp.com/)
 ---
 
 # Table of Contents
@@ -44,7 +44,6 @@ The website owner is the owner of a crossfit gym called XFIT Crossfit.
 
 ## User goals
 
-
 ## User stories
 
 Read all user stories [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing)
@@ -52,26 +51,16 @@ Read all user stories [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuV
 ## Wireframes
 
 ### Homepage - Wireframe
-![Homepage-Wireframe](imagelink)
+[Homepage-Wireframe](/media/xfit-homepage-wireframe.png)
 
-### Login/Register Page - Wireframe
-![Log-in-Wireframe](imagelink)
-
-### Profile Page - Wireframe
-![Log-in-Wireframe](imagelink)
-
-XFIT Members only:
-### Profile Page - Wireframe
-![Log-in-Wireframe](imagelink)
-
-### Merchandise Page - Wireframe
-![Merchandise-Wireframe](imagelink)
-
-### Payment Page - Wireframe
-![Payment-Wireframe](imagelink)
+### Shop Page - Wireframe
+[Shop-Wireframe](/media/xfit-shop-wireframe.png)
 
 ### Classes Page - Wireframe
-![Classes-Wireframe](imagelink)
+[Classes-Wireframe](/media/xfit-classes-wireframe.png)
+
+### Contact Page - Wireframe
+[Contact-Wireframe](/media/xfit-contact-wireframe.png)
 
 ## Surface
 
@@ -79,12 +68,15 @@ XFIT Members only:
 
 The main colours used in this project are: 
 
+#FF6F61 - orange
+#333 - dark grey
+#fff - white
+
 ### Fonts
 
 The fonts are installed from [Google Fonts](https://fonts.google.com/):
 
-* h1, h2, h5: 
-* h3, h4: 
+* h1, h2, h3, h4, h5: Orbitron with a backup of sans-serif.
 
 ### Images
 
@@ -105,8 +97,23 @@ csrf_token - security
 
 ## Apps
 
-Profiles 
-The profiles app will serve two purposes. First to provide a user with a place to save default delivery information. And second to provide them with a record of their order history.
+### Home App 
+
+### Profiles 
+- The profiles app provides the user with a place to save default delivery information. 
+- It also provides the user with a record of their order history.
+
+### Shop App 
+- Host the merchandise and membership items being sold by the crossfit gym. Provide a platform to search for products and see individual product views according to what the user wants to see. 
+- Allows the logged in super user to create, edit and delete products on the shop. 
+
+### Bag App 
+- The bag app allows 
+
+### Checkout App 
+- The checkout app is connected to stripe and provides a payment function to take a payment from the user according to what is in their basket. 
+
+### Contact Us App
 
 ### Page 
 
