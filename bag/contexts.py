@@ -5,6 +5,11 @@ from shop.models import Product
 
 
 def bag_contents(request):
+    """
+    Collate contents of the bag according to what the user has put in it.
+    If item is already in bag, add 1 to the quantity.
+    Calculate delivery cost and grand total according to items in bag.
+    """
 
     bag_items = []
     total = 0
