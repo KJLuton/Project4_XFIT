@@ -47,7 +47,7 @@ The website owner is the owner of a crossfit gym called XFIT Crossfit.
 
 ## User stories
 
-
+Read all user stories [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing)
 
 ## Wireframes
 
@@ -210,6 +210,8 @@ Check the events to see if the payment intent was created and processed successf
 <hr>
 
 ### User Stories Testing
+
+
 
 
 ### Code Validation
