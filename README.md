@@ -3,11 +3,13 @@
 
 ![homepage mock up](.image)
 
-The [XFIT.com](link) website was built by Kirstyn Luton as part of the Full Stack Frameworks with Django Milestone Project 4, with Code Institute. The website presents an online space for the crossfit company XFIT to allow the company to sell memberships to the crossfit gym, sell merchandise and generally market their brand. 
+The [XFIT Crossfit](https://xfit-crossfit-ms4.herokuapp.com/) website was built by Kirstyn Luton as part of the Full Stack Frameworks with Django Milestone Project 4, with Code Institute. The website presents an online space for a company called “XFIT Crossfit”.  It allows for merchandise sales, membership sales, class schedules and daily workouts to be shared into their community. 
 
-The website uses Django and allauth to create secure accounts for XFIT members to log in to their personal profiles in order to see historic payments and book classes according to their class credit. 
+The website is deployed using Heroku pages here: [XFIT Crossfit](https://xfit-crossfit-ms4.herokuapp.com/)
 
-Disclaimer: This website has been built for entertainment and education purposes. It does not represent an actual company. The website is build with HTML and CSS with imported Bootstrap, Python, Django and Heroku frameworks. The website is responsive for multiple screen types.
+The GitHub repository containing the source code and assets is available here: [GitHub Repo](https://github.com/KJLuton/Project4_XFIT)
+Disclaimer: This website has been built for entertainment and education purposes. It does not represent an actual company. The website is responsive for multiple screen types.
+
 
 ## [View live website on Heroku App](link)
 ---
@@ -20,7 +22,7 @@ Disclaimer: This website has been built for entertainment and education purposes
     - [User stories](#user-stories)
     - [Wireframes](#wireframes)
         - [Homepage - Wireframe](###homepage-wireframe)
-        - [All cocktails - Wireframe](###join-us-page-wireframe)
+        - [ - Wireframe](###join-us-page-wireframe)
         - [Log in - Wireframe](###members-page-wireframe)
         - [Register - Wireframe](###contact-us-page-wireframe)
     - [Surface](#surface)
@@ -38,7 +40,7 @@ Disclaimer: This website has been built for entertainment and education purposes
 
 ## Website owner business goals
 
-The website owner is a crossfit gym called XFIT.
+The website owner is the owner of a crossfit gym called XFIT Crossfit. 
 
 ## User goals
 
@@ -178,7 +180,12 @@ _______
 
 
 SUPER USER: 
-Username: u38805
+Username: xfit_super_manager
+Email: supermanager@xfitcrossfit.com
+
+Manager: 
+Username: 
+Email:
 
 * The website testing was a continouse process throughout the project build. I continously tested the functions and pages before every commit to ensure they were working properly. 
 
@@ -234,6 +241,11 @@ log in with your heroku credentials
 
 git push (to push everything to GitHub)
 git push heroku main (to push everything to Heroku)
+
+
+- Add Stripe Keys to Heroku config variables
+- Create new stripe webhook endpoint. 
+        - Go to Add Stripe webhook signing sec ret key to Heroku variables. 
 
 [Back to table of contents](#table-of-contents)
 _______
