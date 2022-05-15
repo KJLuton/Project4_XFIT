@@ -22,6 +22,7 @@ def contactView(request):
             return redirect('success')
     return render(request, "contact_us/contact_us.html", {'form': form})
 
+
 def successView(request):
     """
     On successful message, return contact form send confirmation

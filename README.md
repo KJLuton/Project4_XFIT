@@ -237,19 +237,35 @@ By logging into the Stripe dashboard, I tested the integration and the webhook s
 
 ### User Stories Testing
 
-Testing of the user stories can be found [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing))
+Testing of the user stories can be found [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing)
 
 
 ### Code Validation
 
 * #### W3C Markup Validation Service - Confirmed results 
 
-Homepage - Pass
-Membership Page - Pass
-Classes Page - Pass
-Shop Page - Pass
-Contact Us Page - Pass
-Profile Page - Pass
+[HTML Validator](https://validator.w3.org/)
+<br>
+Homepage - Pass <br>
+Membership Page - Pass <br>
+Classes Page - Pass <br>
+Shop Page - Pass<br>
+Contact Us Page - Pass<br>
+Profile Page - Pass<br>
+Login and All auth pages - Pass<br>
+<br>
+'id="user-options"' running an error on HTML checker as id is used in base.html header and mobile-nav header. <br>
+
+* #### W3C CSS Validation Service - Confirmed result
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+Homepage - Pass <br>
+Membership Page - Pass <br>
+Classes Page - Pass <br>
+Shop Page - Pass <br>
+Contact Us Page - Pass <br>
+Profile Page - Pass <br>
+Login and All auth pages - Pass <br>
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -258,14 +274,17 @@ Profile Page - Pass
     </a>
 </p>
 
-* #### W3C CSS Validation Service
+<br>
+I also tested my code on the following validators: 
 
+[Accessibility](https://wave.webaim.org/) <br>
+[Performance](https://developers.google.com/web/tools/lighthouse) <br>
+[javaScript](https://jshint.com/) <br>
+[Python](http://pep8online.com/) <br>
 
 ### Issues Found During Site Development
 
 * {% load bag_tools %} wouldn't work. Read django documentation https://docs.djangoproject.com/en/4.0/howto/custom-template-tags/ but everything was set up correctly. Restarted the server and it worked. 
-* 
-
 
 [Back to table of contents](#table-of-contents)
 _______
@@ -323,7 +342,6 @@ Leggings - https://i5.walmartimages.com/asr/a83c3c4b-95de-49f3-b588-dbfeffd9dedd
 #### Images: 
 
 Photo by <a href="https://unsplash.com/@bastien_plu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bastien Plu</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 
 #### README.md File Assistance
 
