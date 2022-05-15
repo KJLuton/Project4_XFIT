@@ -10,6 +10,11 @@ The website is deployed using Heroku pages here: [XFIT Crossfit](https://xfit-cr
 The GitHub repository containing the source code and assets is available here: [GitHub Repo](https://github.com/KJLuton/Project4_XFIT)
 Disclaimer: This website has been built for entertainment and education purposes. It does not represent an actual company. The website is responsive for multiple screen types.
 
+Users can be created for the website on the site. To test any payment features, please use card below:
+<strong>Method:</strong> Credit card <br>
+<strong>Scenario 1:</strong> The card payment succeeds and doesn’t require authentication.<br>
+<strong>Testing:</strong> Fill in the credit card form using the credit card number 4242 4242 4242 4242 with any expiry, CVC, and postal code.<br>
+<br>
 
 ## [View live website on Heroku App](https://xfit-crossfit-ms4.herokuapp.com/)
 ---
@@ -45,9 +50,10 @@ The website owner is the owner of a crossfit gym called XFIT Crossfit.
 
 ## User goals
 
-## User stories
+## User stories and goals
 
-Read all user stories [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing)
+All user stories can be found here [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing)
+
 ## Database Design
 
 Categories & Products
@@ -121,6 +127,7 @@ Super User:
 ## Apps
 
 ### Home App 
+- The Home App welcomes the user to the website and gives clear navigational direction on where the user needs to click in order to achieve their particular goals. 
 
 ### Profiles 
 - The Profiles App provides the user with a place to save default delivery information. 
@@ -159,7 +166,7 @@ _______
 ## Languages Used
 
 * #### [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-   Python is an interpreted high-level general-purpose programming language. Python was used to write..... 
+   Python is an interpreted high-level general-purpose programming language. 
 
 * #### [HTML5](https://en.wikipedia.org/wiki/HTML5)
     HTML was used to build the website structure and overall layout. 
@@ -190,39 +197,29 @@ _______
 * #### [Heroku App](https://www.heroku.com)
     Heroku was used to deploy the overall project to ensure the Python languages work preoperly. 
 
-* #### [Django]()    
-* #### [Javascript]()   
+* #### [Django](https://www.djangoproject.com/)    
+    Django is teh frame work used to build the application.
 
+* #### [Javascript](https://www.javascript.com/)   
+    Javascript was used with Bootstrap and aided the responsive and interactive elements of the site.
 
 [Back to table of contents](#table-of-contents)
 _______
 
-# Testing
+# Testing 
 
-* Tested the site was linked to django by typing "python3 manage.py runserver" into the terminal once the initial django installation had been made. The django confirmation screen confirmed the installation had work and the site was connected. 
-* Tested the initial allauth account set up by setting the LOGIN_REDIRECT_URL to '/sucess'. Even though the final url path hadn't been set up, the error message was for the url, '/success', which confirms that the authentication is working properly. 
-
-* compressed images using tinypng.com to ensure images dont take up to much space and slow the site down. tinypng keeps the image quality qhilst reducing te size. 
-
-* Started with 'checkout' teminology for the 'bag' app. Updated it to bag so a checkout could be created and not confused. 
-* Used print statements to confirm bag contents were being added and it was set up correctly ahead of rendering the items into the shopping bag template. 
-
-
-SUPER USER: 
-Username: xfit_super_manager
-Email: supermanager@xfitcrossfit.com
-
-Manager: 
-Username: 
-Email:
-
-* The website testing was a continouse process throughout the project build. I continously tested the functions and pages before every commit to ensure they were working properly. 
+The website was tested throughout the build process to ensure user stories were being checked and written code was working properly. 
 
 ### Functionality Testing
 
-https://dashboard.stripe.com/test/payments 
-Check the events to see if the payment intent was created and processed successfully. 
+* The website was initially tested to check the connection to django by typing "python3 manage.py runserver" into the terminal once the initial django installation had been made. The django confirmation screen confirmed the installation had work and the site was connected. 
+* Tested the initial allauth account set up by setting the LOGIN_REDIRECT_URL to '/sucess'. Even though the final url path hadn't been set up, the error message was for the url, '/success', which confirms that the authentication is working properly. 
+* Compressed images using tinypng.com to ensure images dont take up to much space and slow the site down. tinypng keeps the image quality qhilst reducing te size. 
+* Started with 'checkout' teminology for the 'bag' app. Updated it to bag so a checkout could be created and not confused. 
+* Used print statements to confirm bag contents were being added and it was set up correctly ahead of rendering the items into the shopping bag template. 
 
+By logging into the Stripe dashboard, I tested the integration and the webhook set up. I checked the events to see if the payment intent was created and processed successfully. [Stripe test payments](https://dashboard.stripe.com/test/payments)
+ 
 <strong><u>Stripe payment testing</u></strong> <br>
 <strong>Method:</strong> Credit card <br>
 <strong>Scenario 1:</strong> The card payment succeeds and doesn’t require authentication.<br>
@@ -240,7 +237,7 @@ Check the events to see if the payment intent was created and processed successf
 
 ### User Stories Testing
 
-
+Testing of the user stories can be found [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing))
 
 
 ### Code Validation
@@ -260,39 +257,50 @@ Profile Page - Pass
             alt="Valid CSS!" />
     </a>
 </p>
-    
-
-
 
 * #### W3C CSS Validation Service
 
 
 ### Issues Found During Site Development
 
-{% load bag_tools %} wouldn't work. Read django documentation https://docs.djangoproject.com/en/4.0/howto/custom-template-tags/ but everything was set up correctly. Restarted the server and it worked. 
+* {% load bag_tools %} wouldn't work. Read django documentation https://docs.djangoproject.com/en/4.0/howto/custom-template-tags/ but everything was set up correctly. Restarted the server and it worked. 
+* 
 
 
 [Back to table of contents](#table-of-contents)
 _______
 # Deployment
 
-Migrations 
-python3 manage.py showmigrations
+## Local deployment
+To deploy this site locally, run the following steps: 
+1. Enter the command git add .
+2. Enter the command gid commit -m "Enter your commit message here"
+3. Ener the command git push
 
+## Heroku Deployment 
 
+To deploy this application to Heroku, run the following steps: 
 
-heroku login -i
-log in with your heroku credentials
-
-
-
-git push (to push everything to GitHub)
-git push heroku main (to push everything to Heroku)
-
-
-- Add Stripe Keys to Heroku config variables
-- Create new stripe webhook endpoint. 
-        - Go to Add Stripe webhook signing sec ret key to Heroku variables. 
+1. Create an account at heroku.com
+2. Create an app, give it a name, and select a region
+3. Under resources search for postgres, and add a Postgres database to the app Heroku Postgres
+4. Install the plugins dj-database-url and psycopg2-binary.
+5. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+6. Create a Procfile with the text: web: gunicorn rugby_shop.wsgi:application for example
+7. In the settings.py ensure the connection is to the Heroku postgres database
+8. Ensure debug is set to false in the settings.py file
+9. Run "python3 manage.py showmigrations" to check the status of the migrations
+10. Run "python3 manage.py migrate" to migrate the database
+11. Run "python3 manage.py createsuperuser" to create a super/admin user
+12. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+13. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+14. Install gunicorn and add it to the requirements.tx file using the command pip3 freeze > requirements.txt
+15. From the CLI login to Heroku using the command heroku login -i
+16. Disable collectstatic in Heroku before any code is pushed using the command heroku config:unset DISABLE_COLLECTSTATIC
+17. Ensure the following environment variables are set in Heroku
+![heroku_config_var](/media/config_var_heroku.png)
+18. Push the code to Heroku using the command git push heroku main (Due to a Heroku and GitHub current error, automatic deployments are not possible at this time.)
+19. Check the build logs to confirm deployment and build successful
 
 [Back to table of contents](#table-of-contents)
 _______
@@ -300,10 +308,11 @@ _______
 
 ## Content
 
-Policy generator - https://app.freeprivacypolicy.com/
+Information from for the website was take from [Wikipedia](https://en.wikipedia.org/wiki/CrossFit) and was written by myself. The website policy was created with a [policy generator](https://app.freeprivacypolicy.com/)
 
 ## Media
 
+The merchandise products were edited by myself. The original images can be found here: 
 Shirt - https://www.pngbyte.com/en/freepng-zqozx/download
 Tank - https://www.redbubble.com/i/tank-top/t-shirt-mockup-free-by-davids350/96256725.B4HC7?country_code=GB&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5jnGy3kF5IuoTTfu5_1ikoMZ9_dUrLW7RiJTe3sAxfCDhFVh5xlxfQaAmkgEALw_wcB&gclsrc=aw.ds 
 Weight belt - https://www.gymreapers.com/products/gymreapers-7mm-leather-weightlifting-belt
@@ -319,8 +328,8 @@ Photo by <a href="https://unsplash.com/@bastien_plu?utm_source=unsplash&utm_medi
 #### README.md File Assistance
 
 I used the following README.md files for assistance in structure and guidance on how to write a README.md file: 
-
 * [README.md 1](https://github.com/KJLuton/RiversideRowingClub/blob/master/README.md)
+* [README.md 2](https://github.com/pmeeny/CI-MS4-LOVErugby#strategy)
 
 #### Code:
 
@@ -333,6 +342,6 @@ Stripe documentation assiatance: https://stripe.com/docs/payments/accept-a-payme
 
 # Acknowledgements
 
-
+I would like to thank my mentor Antonija for her guidance, the tutor Ed b_alum and the students on slack for their feedback.
 
 [Back to Table of contents](#table-of-contents)
