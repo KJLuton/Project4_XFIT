@@ -1,7 +1,7 @@
 # XFIT - Crossfit Gym
 ## Full Stack Frameworks with Django Milestone Project 4
 
-![homepage mock up](.image)
+![homepage mock up](/media/website-mockup.jpg)
 
 The [XFIT Crossfit](https://xfit-crossfit-ms4.herokuapp.com/) website was built by Kirstyn Luton as part of the Full Stack Frameworks with Django Milestone Project 4, with Code Institute. The website presents an online space for a company called “XFIT Crossfit”.  It allows for merchandise sales, membership sales, class schedules and daily workouts to be shared into their community. 
 
@@ -20,11 +20,12 @@ Disclaimer: This website has been built for entertainment and education purposes
     - [Website owner business goals](#website-owner-business-goals)
     - [User goals](#user-goals)
     - [User stories](#user-stories)
+    - [Database Design](#database-design)
     - [Wireframes](#wireframes)
         - [Homepage - Wireframe](###homepage-wireframe)
-        - [ - Wireframe](###join-us-page-wireframe)
-        - [Log in - Wireframe](###members-page-wireframe)
-        - [Register - Wireframe](###contact-us-page-wireframe)
+        - [Shop - Wireframe](###shop-wireframe)
+        - [Classes - Wireframe](###classes-wireframe)
+        - [Contact - Wireframe](###contact-wireframe)
     - [Surface](#surface)
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
@@ -47,6 +48,33 @@ The website owner is the owner of a crossfit gym called XFIT Crossfit.
 ## User stories
 
 Read all user stories [here](https://docs.google.com/spreadsheets/d/1pOBh0FCzIuVy0o07vWA4MQvVk5BNl09HXZjQ0tReOWA/edit?usp=sharing)
+## Database Design
+
+Categories & Products
+- memberships
+    - 1 year membership
+    - 1 month membership
+- shorts_leggings
+    - xfit shorts
+    - xfit leggings (womans)
+- xfit_essentials
+    - wrist straps
+    - weightlighting belt
+- tshirts_hoodies
+    - xfit tank top
+    - xfit tshirt
+    - xfit hoody
+
+Users
+- Super User 
+    - Manage Products 
+    - Purchase products
+- Logged in & Profile Holder
+    - Save personal information for faster checkout
+    - Purchase products
+- Website user 
+    - Purchase products 
+
 
 ## Wireframes
 
@@ -78,10 +106,7 @@ The fonts are installed from [Google Fonts](https://fonts.google.com/):
 
 * h1, h2, h3, h4, h5: Orbitron with a backup of sans-serif.
 
-### Images
-
 [Back to table of contents](#table-of-contents)
-
 _______
 # Features and functions
 
@@ -93,41 +118,38 @@ Super User:
 
 ## Existing Features
 
-csrf_token - security 
-
 ## Apps
 
 ### Home App 
 
 ### Profiles 
-- The profiles app provides the user with a place to save default delivery information. 
+- The Profiles App provides the user with a place to save default delivery information. 
 - It also provides the user with a record of their order history.
+- The Profile App uses a form model to capture the users details attached them to their account, should they wish to save their account for future use. 
 
 ### Shop App 
 - Host the merchandise and membership items being sold by the crossfit gym. Provide a platform to search for products and see individual product views according to what the user wants to see. 
 - Allows the logged in super user to create, edit and delete products on the shop. 
 
 ### Bag App 
-- The bag app allows 
+- The bag app allows users to browse the products on the site and collect the sizes and items they want into place, before they proceed to the checkout.
+- The bag app is where the calculations take place in order to understand how much the user owes for the purchase. 
+- The bag app also calculates the delivery cost according to the amount that is in the bag. 
 
 ### Checkout App 
-- The checkout app is connected to stripe and provides a payment function to take a payment from the user according to what is in their basket. 
+- The checkout app is connected to [Stripe](https://stripe.com/gb) and provides a payment function to take a payment from the user according to what is in their bag. 
 
 ### Contact Us App
-
-### Page 
-
-![page mock up](image.url)
-
-#### 
+- The contact app provides the user with a contact point via email to get in touch with the crossfit gym. 
 
 
 ## Future implementations
 
-- Add sales category
-- Add links to images 
-- Add confirmation when deleting products 
-
+- Add an interactive calendar where members are recognised as a logged in user and can book their sessions in advance according to their membership type. This would allow for managers to limit classes to a certain number of users and allow the users to book in advance to organise themselves better. 
+- Add a subscription membership type to allow for on going subscriptions.
+- Include a daily workout section on the members area to allow members to see daily workouts and tips. This would encourage members to go on to the site daily and increase traffic to the site. 
+- Allow members to comment on the workouts and share their session's best with other members of the gym. This would improve engagement on the site and overall XFIT community. 
+- Add confirmation when deleting products. This would help the user experience of the manager as it would give an extra step to avoid accidentally deleting products. 
 
 [Back to table of contents](#table-of-contents)
 _______
@@ -291,30 +313,8 @@ Leggings - https://i5.walmartimages.com/asr/a83c3c4b-95de-49f3-b588-dbfeffd9dedd
 
 #### Images: 
 
-Photo by <a href="https://unsplash.com/@ricardohenri?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ricardo Henri</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@johnarano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Arano</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@karsten116?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karsten Winegeart</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@victorfreitas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Freitas</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@aggergakker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jesper Aggergaard</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@rdehamer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryan De Hamer</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@victorfreitas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Freitas</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
 Photo by <a href="https://unsplash.com/@bastien_plu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bastien Plu</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-Photo by <a href="https://unsplash.com/@victorfreitas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Victor Freitas</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@alonsoreyes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alonso Reyes</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@corey_untitled?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Corey Young</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-Photo by <a href="https://unsplash.com/@bastien_plu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bastien Plu</a> on <a href="https://unsplash.com/s/photos/crossfit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
 #### README.md File Assistance
 
@@ -324,13 +324,11 @@ I used the following README.md files for assistance in structure and guidance on
 
 #### Code:
 
-To write the code I used tutorials from the Code Institute lessons (Backend Development).
-
+I wrote the code with the guidance of the Code Institute lessons (Boutique Ado Project).
 Base.html boiler template - bootstrap (https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template)
 Homepage overlay : (https://codepen.io/zemchuks/pen/VwZjywr?html-preprocessor=pug)
-
-
-https://stripe.com/docs/payments/accept-a-payment?platform=web&ui=elements#set-up-stripe
+Assist in the contact form: https://learndjango.com/tutorials/django-email-contact-form
+Stripe documentation assiatance: https://stripe.com/docs/payments/accept-a-payment?platform=web&ui=elements#set-up-stripe
 
 
 # Acknowledgements
