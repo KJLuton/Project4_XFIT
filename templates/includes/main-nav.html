@@ -1,4 +1,4 @@
-<div class="main-menu collapse navbar-collapse" id="main-nav"> 
+<div class="main-menu collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="memberships logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'membership' %}">
@@ -12,14 +12,17 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'shop' %}?category=xfit_essentials,shorts_leggings,tshirts_hoodies" id="merchandise-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5"
+                href="{% url 'shop' %}?category=xfit_essentials,shorts_leggings,tshirts_hoodies" id="merchandise-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Merchandise
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="merchandise-link">
                 <a href="{% url 'shop' %}?category=tshirts_hoodies" class="dropdown-item">Tshirts & Hoodies</a>
                 <a href="{% url 'shop' %}?category=shorts_leggings" class="dropdown-item">Shorts</a>
                 <a href="{% url 'shop' %}?category=xfit_essentials" class="dropdown-item">XFIT Essentials</a>
-                <a href="{% url 'shop' %}?category=xfit_essentials,shorts_leggings,tshirts_hoodies" class="dropdown-item">All Merchandise</a>
+                <a href="{% url 'shop' %}?category=xfit_essentials,shorts_leggings,tshirts_hoodies"
+                    class="dropdown-item">All Merchandise</a>
             </div>
         </li>
 
