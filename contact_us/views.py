@@ -18,7 +18,7 @@ def contactView(request):
             try:
                 send_mail(subject, message, from_email, ['admin@xfitcrossfitbox.com'])
             except BadHeaderError:
-                messages.error(request, 'Message send failed. Please ensure the form is valid.')
+                return render(request, "contact_us/contact_us.html")
             return redirect('success')
     return render(request, "contact_us/contact_us.html", {'form': form})
 
