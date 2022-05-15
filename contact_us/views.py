@@ -18,7 +18,7 @@ def contactView(request):
             try:
                 send_mail(subject, message, from_email, ['admin@xfitcrossfitbox.com'])
             except BadHeaderError:
-                return render(request, "contact_us/contact_us.html")
+                return HttpResponse('Invalid header found.')
             return redirect('success')
     return render(request, "contact_us/contact_us.html", {'form': form})
 
